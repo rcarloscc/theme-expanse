@@ -306,7 +306,7 @@ header ul li a:hover {
 }
 header ul li a:hover,
 header ul li a.active {
-  color: #37cca2;
+  color: #37cca2 !important;
   border-bottom: 2px solid #37cca2;
 }
 header .overlay {
