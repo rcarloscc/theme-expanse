@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>
-      No te Puedo Olvida | By Roberto Castellanos
+      {% if is_login %}Login
+      {% elif is_home %}{{ site.author }}
+      {% elif is_tag %}{{ tag }}
+      {% elif post %}{{ post.title }}
+      {% endif %}
+      | {{ site.name }}
     </title>
 
     {{ header_meta }}
@@ -24,7 +29,6 @@
     })();
     </script>
     {% endif %}
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
   </head>
   <body{% if is_post or is_tag or is_page %} class="short-header"{% endif %}>
 
