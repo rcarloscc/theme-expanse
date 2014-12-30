@@ -170,7 +170,8 @@
         {% if post.tags %}
         <ul class="post-tags">
         {% for tag in post.tags %}
-          <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+          <li><a href="/tag/{{ tag }}">{{ post.tags|format_tags(humanize=True) }}</a></li>
+
         {% endfor %}
         </ul>
         {% endif %}
@@ -236,7 +237,7 @@
           <p class="copy">Todos los derechos Reservados &copy; 2014 {{ site.name }}</p>
         </div>
         <div class="right">
-          <p><a href="/tag/la-conquista" class="{{ set_active('/tag/la-conquista') }}">La Conquista</a></p>
+          <p><a href="/tag/conquistandote" class="{{ set_active('/tag/conquistandote') }}">Conquistándote</a></p>
         </div>
       </footer>
     </div>
