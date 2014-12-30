@@ -29,6 +29,7 @@
     })();
     </script>
     {% endif %}
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   </head>
   <body{% if is_post or is_tag or is_page %} class="short-header"{% endif %}>
 
@@ -44,7 +45,7 @@
       <div class="overlay"></div>
       <img src="{{ assets('images/rainbow-bg.png') }}" class="rainbow" />
       <div class="container wide">
-        <h1 style="font-family: 'Indie Flower', cursive; font-size: 40px;"><a href="{{ site.base_url }}">{{ site.name }}</a></h1>
+        <h1 style="font-family: 'Poiret One', cursive; font-size: 40px;"><a href="{{ site.base_url }}">{{ site.name }}</a></h1>
         {% if pages %}
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
